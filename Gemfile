@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'devise'
-gem 'rails_admin'
+gem 'rails_admin', '1.3.0'
 gem 'will_paginate', '~> 3.1.0'
 gem 'bootstrap-will_paginate'
 

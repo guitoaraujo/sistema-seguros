@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4007240d-b47e-4aae-a644-900be71820d7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/initializers/kaminari.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/locales/active_record.pt-BR.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/locales/devise.pt-BR.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/locales/pt-BR.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/locales/rails_admin.pt-BR.yml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -338,12 +333,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521204552195</updated>
       <workItem from="1521204553952" duration="22657000" />
-      <workItem from="1521298159032" duration="16633000" />
+      <workItem from="1521298159032" duration="16810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39290000" />
+    <option name="totallyTimeSpent" value="39467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1853" height="1055" extended-state="6" />
