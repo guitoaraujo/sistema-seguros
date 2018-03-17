@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  budge: 1.5
+  insured: MyString
+  cnpj: MyString
+  itens: MyText
+  current_bonus: 1
+  type: 
+  supervisor: MyString
+  supervisor_email: MyString
+  supervisor_phone: MyString
+  supervisor_cellphone: MyString
+  director: MyString
+  director_email: MyString
+  director_phone: MyString
+  director_cellphone: MyString
+  last_bonus: 1
+  validity: MyString
+  insurer: MyString
+  assistant: MyString
+  commercial_supervisor: MyString
+  city: MyString
+  estate: MyString
+  obs: MyText
+
+two:
+  date: MyString
+  budge: 1.5
+  insured: MyString
+  cnpj: MyString
+  itens: MyText
+  current_bonus: 1
+  type: 
+  supervisor: MyString
+  supervisor_email: MyString
+  supervisor_phone: MyString
+  supervisor_cellphone: MyString
+  director: MyString
+  director_email: MyString
+  director_phone: MyString
+  director_cellphone: MyString
+  last_bonus: 1
+  validity: MyString
+  insurer: MyString
+  assistant: MyString
+  commercial_supervisor: MyString
+  city: MyString
+  estate: MyString
+  obs: MyText

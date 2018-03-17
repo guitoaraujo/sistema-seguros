@@ -1,0 +1,6 @@
+<h1><%= t('edit_client') %></h1>
+
+<%= render 'form', client: @client %>
+
+<%= link_to t('show'), @client, class: 'btn btn-warning' %>
+<%= link_to t('back'), clients_path, class: 'btn btn-danger' %>

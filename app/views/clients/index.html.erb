@@ -1,0 +1,44 @@
+<h1><%= t('clients') %></h1>
+<span><%= link_to t('new_client'), new_client_path, class: 'btn btn-sm btn-success' %></span>
+<%= will_paginate @clients, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer, class: 'd-flex justify-content-center pagination-sm' %>
+<table class="table table-hover table-bordered table-sm mt-3">
+  <thead class="thead-light">
+    <tr scope="col">
+      <th><%= t('date') %></th>
+      <th><%= t('insured') %></th>
+      <th><%= t('cnpj') %></th>
+      <th><%= t('insured_type') %></th>
+      <th><%= t('supervisor') %></th>
+      <th><%= t('director') %></th>
+      <th><%= t('validity') %></th>
+      <th><%= t('insurer') %></th>
+      <th><%= t('assistant') %></th>
+      <th><%= t('commercial_supervisor') %></th>
+      <th><%= t('city') %></th>
+      <th><%= t('estate') %></th>
+      <th colspan="3"><%= t('options') %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clients.each do |client| %>
+      <tr scope="row">
+        <td><%= client.date.strftime("%d/%m/%y") %></td>
+        <td><%= client.insured %></td>
+        <td><%= client.cnpj %></td>
+        <td><%= client.insured_type %></td>
+        <td><%= client.supervisor %></td>
+        <td><%= client.director %></td>
+        <td><%= client.validity.strftime("%d/%m/%y") %></td>
+        <td><%= client.insurer %></td>
+        <td><%= client.assistant %></td>
+        <td><%= client.commercial_supervisor %></td>
+        <td><%= client.city %></td>
+        <td><%= client.estate %></td>
+        <td><%= link_to t('buttons.show'), client, class: 'btn btn-sm btn-info' %></td>
+        <td><%= link_to t('buttons.edit'), edit_client_path(client), class: 'btn btn-sm btn-warning' %></td>
+        <td><%= link_to t('buttons.delete'), client, method: :delete, class: 'btn btn-sm btn-danger', data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

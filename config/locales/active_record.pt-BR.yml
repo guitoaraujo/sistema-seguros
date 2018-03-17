@@ -1,0 +1,47 @@
+pt-BR:
+  activerecord:
+    models:
+      client:
+        one: Cliente
+        few: Clientes
+        many: Clientes
+        other: Clientes
+      user:
+        one: Usuário
+        few: Usuários
+        many: Usuários
+        other: Usuários
+    attributes:
+      user:
+        password: "Senha"
+        name: "Nome"
+        email: "Email"
+      client:
+        new_client: "Novo Cliente"
+        edit_client: "Editar Cliente"
+        clients: "Clientes"
+        date: "Data de Criação"
+        budge: "Orçamento"
+        insured: "Segurado"
+        cnpj: "CNPJ"
+        itens: "Itens"
+        current_bonus: "Prêmio Líquido"
+        insured_type: "Tipo de Segurado"
+        supervisor: "Responsável Fechamento de Frota"
+        supervisor_email: "Email do Responsável"
+        supervisor_phone: "Telefone do Responsável"
+        supervisor_cellphone: "Celular do Responsável"
+        director: "Diretor"
+        director_email: "Email do Diretor"
+        director_phone: "Telefone do Diretor"
+        director_cellphone: "Celular do Diretor"
+        last_bonus: "Prêmio Vigência Anterior"
+        validity: "Fim da Vigência"
+        insurer: "Seguradora"
+        assistant: "Assistente ForteBens"
+        commercial_supervisor: "Comercial Responsável"
+        city: "Cidade"
+        estate: "Estado"
+        obs: "Obs."
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
