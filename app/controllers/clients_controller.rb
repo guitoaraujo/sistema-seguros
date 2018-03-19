@@ -8,9 +8,9 @@ class ClientsController < ApplicationController
   # GET /clients.json
   def index
     if current_user.admin?
-      @clients = Client.paginate(:page => params[:page], :per_page => 10).order(date: :desc)
+      @clients = Client.paginate(:page => params[:page], :per_page => 10).order(register_date: :desc)
     else
-      @clients = Client.where(user_id: current_user.id).paginate(:page => params[:page], :per_page => 10).order(date: :desc)
+      @clients = Client.where(user_id: current_user.id).paginate(:page => params[:page], :per_page => 10).order(register_date: :desc)
     end
   end
 
@@ -84,6 +84,6 @@ class ClientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def client_params
-      params.require(:client).permit(:date, :budge, :insured, :cnpj, :itens, :current_bonus, :insured_type, :supervisor, :supervisor_email, :supervisor_phone, :supervisor_cellphone, :director, :director_email, :director_phone, :director_cellphone, :last_bonus, :validity, :insurer, :assistant, :commercial_supervisor, :city, :estate, :obs)
+      params.require(:client).permit(:register_date, :budge, :insured, :cnpj, :itens, :current_bonus, :insured_type, :supervisor, :supervisor_email, :supervisor_phone, :supervisor_cellphone, :director, :director_email, :director_phone, :director_cellphone, :last_bonus, :validity, :insurer, :assistant, :commercial_supervisor, :city, :estate, :obs)
     end
 end

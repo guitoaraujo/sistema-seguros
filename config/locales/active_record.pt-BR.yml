@@ -20,7 +20,7 @@ pt-BR:
         new_client: "Novo Cliente"
         edit_client: "Editar Cliente"
         clients: "Clientes"
-        date: "Data de Criação"
+        register_date: "Data de Criação"
         budge: "Orçamento"
         insured: "Segurado"
         cnpj: "CNPJ"

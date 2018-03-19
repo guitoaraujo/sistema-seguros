@@ -4,7 +4,7 @@
 <table class="table table-hover table-bordered table-sm mt-3">
   <thead class="thead-light">
     <tr scope="col">
-      <th><%= t('date') %></th>
+      <th><%= t('register_date') %></th>
       <th><%= t('insured') %></th>
       <th><%= t('cnpj') %></th>
       <th><%= t('insured_type') %></th>
@@ -23,7 +23,7 @@
   <tbody>
     <% @clients.each do |client| %>
       <tr scope="row">
-        <td><%= client.date.strftime("%d/%m/%y") %></td>
+        <td><%= client.register_date.strftime("%d/%m/%y") %></td>
         <td><%= client.insured %></td>
         <td><%= client.cnpj %></td>
         <td><%= client.insured_type %></td>
