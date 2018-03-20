@@ -2,6 +2,7 @@ class ClientsController < ApplicationController
   before_action :set_client, only: [:show, :edit, :update, :destroy]
   before_action :set_types, only: [:new, :edit, :create, :update]
   before_action :set_insurers, only: [:new, :edit, :create, :update]
+  before_action :set_employees, only: [:new, :edit, :create, :update]
   #before_action :set_
 
   # GET /clients
@@ -80,6 +81,10 @@ class ClientsController < ApplicationController
 
     def set_insurers
       @insurers = Client.insurers.keys
+    end
+
+    def set_employees
+      @employees = Client.employees.keys
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

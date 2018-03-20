@@ -17,4 +17,16 @@ class Client < ApplicationRecord
                   'Suhai Seguradora',
                   'Mapfre',
                   'HDI' ]
+  enum employees: [ 'Leandro',
+                    'Fabio',
+                    'Bruna',
+                    'Lorran',
+                    'Priscila',
+                    'Veronica',
+                    'Paulo',
+                    'Rafaela',
+                    'Kelly',
+                    'Flavia',
+                    'Camila',
+                    'Richard' ]
 end

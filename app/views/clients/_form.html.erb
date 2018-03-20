@@ -102,12 +102,12 @@
 
   <div class="field">
     <%= form.label t('assistant') %>
-    <%= form.text_field :assistant, id: :client_assistant, class: 'form-control' %>
+    <%= form.select :assistant, @employees, {}, { class: 'form-control' } %>
   </div>
 
   <div class="field">
     <%= form.label t('commercial_supervisor') %>
-    <%= form.text_field :commercial_supervisor, id: :client_commercial_supervisor, class: 'form-control' %>
+    <%= form.select :commercial_supervisor, @employees, {}, { class: 'form-control' } %>
   </div>
 
   <div class="field">
