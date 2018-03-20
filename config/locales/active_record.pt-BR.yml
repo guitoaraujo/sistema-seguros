@@ -11,6 +11,23 @@ pt-BR:
         few: Usuários
         many: Usuários
         other: Usuários
+    errors:
+      template:
+        header:
+          one:   "1 erro ocorreu, erifique abaixo:"
+          other: "%{count} erros ocorreram, verifiquem abaixo:"
+        body: "Ocorreram erros nos seguintes campos:"
+      models:
+        client:
+          attributes:
+            register_date:
+              blank: " não pode estar em branco!"
+            validity:
+              blank: " não pode estar em branco!"
+            budge:
+              blank: " não pode estar em branco!"
+            last_bonus:
+              blank: " não pode estar em branco!"
     attributes:
       user:
         password: "Senha"
@@ -45,3 +62,5 @@ pt-BR:
         obs: "Obs."
         created_at: "Criado em"
         updated_at: "Atualizado em"
+
+

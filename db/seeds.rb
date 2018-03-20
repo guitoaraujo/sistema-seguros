@@ -10,7 +10,7 @@
 
 20.times do
   Client.create(
-                date: Faker::Time.between(28.days.ago, Date.today, :all),
+                register_date: Faker::Time.between(28.days.ago, Date.today, :all),
                 insured: Faker::Name.name_with_middle,
                 cnpj: Faker::Number.number(13),
                 supervisor: Faker::Name.name_with_middle,
@@ -20,6 +20,6 @@
                 validity: Faker::Date.between_except(1.year.ago, 1.year.from_now, Date.today),
                 city: Faker::Address.city,
                 estate: Faker::Address.state,
-                user_id: rand(1..2)
+                user_id: 1
                )
 end

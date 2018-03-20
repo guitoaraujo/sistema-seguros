@@ -1,7 +1,6 @@
 <%= form_with(model: client, local: true, class: 'form-group') do |form| %>
   <% if client.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(client.errors.count, "error") %> prohibited this client from being saved:</h2>
+    <div id="error_explanation" class="alert alert-danger">
 
       <ul>
       <% client.errors.full_messages.each do |message| %>

@@ -1,7 +1,7 @@
 class CreateClients < ActiveRecord::Migration[5.1]
   def change
     create_table :clients do |t|
-      t.string :date
+      t.datetime :register_date
       t.float :budge
       t.string :insured
       t.string :cnpj
@@ -17,7 +17,7 @@ class CreateClients < ActiveRecord::Migration[5.1]
       t.string :director_phone
       t.string :director_cellphone
       t.integer :last_bonus
-      t.string :validity
+      t.datetime :validity
       t.string :insurer
       t.string :assistant
       t.string :commercial_supervisor
