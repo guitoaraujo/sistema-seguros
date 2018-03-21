@@ -29,7 +29,7 @@
         <td><%= client.insured_type %></td>
         <td><%= client.supervisor %></td>
         <td><%= client.director %></td>
-        <td><%= client.validity.strftime("%d/%m/%y") %></td>
+        <td class="<%= validity_alert_control(client.validity) %>"><%= client.validity.strftime("%d/%m/%y") %></td>
         <td><%= client.insurer %></td>
         <td><%= client.assistant %></td>
         <td><%= client.commercial_supervisor %></td>
@@ -37,7 +37,9 @@
         <td><%= client.estate %></td>
         <td><%= link_to t('buttons.show'), client, class: 'btn btn-sm btn-info' %></td>
         <td><%= link_to t('buttons.edit'), edit_client_path(client), class: 'btn btn-sm btn-warning' %></td>
-        <td><%= link_to t('buttons.delete'), client, method: :delete, class: 'btn btn-sm btn-danger', data: { confirm: 'Are you sure?' } %></td>
+        <% if current_user.admin? %>
+          <td><%= link_to t('buttons.delete'), client, method: :delete, class: 'btn btn-sm btn-danger', data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

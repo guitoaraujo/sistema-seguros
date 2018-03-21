@@ -22,6 +22,12 @@ pt-BR:
           attributes:
             register_date:
               blank: " não pode estar em branco!"
+            budge:
+              blank: " não pode estar em branco!"
+            cnpj:
+              blank: " não pode estar em branco!"
+            insured:
+              blank: " não pode estar em branco!"
             validity:
               blank: " não pode estar em branco!"
             budge:

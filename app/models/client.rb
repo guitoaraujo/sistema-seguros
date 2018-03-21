@@ -2,7 +2,7 @@ class Client < ApplicationRecord
 
   belongs_to :user
 
-  validates :register_date, :validity, :budge, :last_bonus, presence: true
+  validates :register_date, :validity, :budge, :last_bonus, :cnpj, :insured, presence: true
 
   enum types:   [ 'Prospect', 'Renovação ForteBens' ]
   enum insurers: [ 'Itau',

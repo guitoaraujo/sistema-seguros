@@ -17,7 +17,7 @@
 
   <div class="field">
     <%= form.label t('budge') %>
-    <%= form.text_field :budge, id: :client_budge, class: 'form-control' %>
+    <%= form.text_field :budge, id: :client_budge, class: 'form-control', :data => {:mask=> '999-999-9999'} %>
   </div>
 
   <div class="field">
