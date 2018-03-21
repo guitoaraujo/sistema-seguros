@@ -1,4 +1,8 @@
 pt-BR:
+  time:
+    formats:
+      default: "%d/%m/%Y %H:%M:%S"
+      long: "%d/%m/%Y %H:%M:%S"
   datetime:
     distance_in_words:
       x_seconds:
