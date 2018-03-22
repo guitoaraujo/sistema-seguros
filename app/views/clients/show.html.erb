@@ -75,7 +75,7 @@
 
 <p>
   <strong><%= t('last_bonus') %>:</strong>
-  <%= number_to_currency(@client.last_bonus, unit: "R$ ", separator: ",", delimiter: ".") %>
+  <%= number_to_currency(@client.last_bonus, unit: "R$ ", separator: ",", delimiter: ".") unless @client.last_bonus.nil?%>
 </p>
 
 <p>
