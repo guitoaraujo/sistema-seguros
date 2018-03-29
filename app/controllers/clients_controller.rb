@@ -3,16 +3,12 @@ class ClientsController < ApplicationController
   before_action :set_types, only: [:new, :edit, :create, :update]
   before_action :set_insurers, only: [:new, :edit, :create, :update]
   before_action :set_employees, only: [:new, :edit, :create, :update]
-  #before_action :set_
+  before_action :validate_user, only: [:edit, :destroy]
 
   # GET /clients
   # GET /clients.json
   def index
-    if current_user.admin?
-      @clients = Client.paginate(:page => params[:page], :per_page => 10).order(register_date: :desc)
-    else
-      @clients = Client.where(user_id: current_user.id).paginate(:page => params[:page], :per_page => 10).order(register_date: :desc)
-    end
+    @clients = Client.paginate(:page => params[:page], :per_page => 10).order(register_date: :desc)
   end
 
   # GET /clients/1
@@ -85,6 +81,10 @@ class ClientsController < ApplicationController
 
     def set_employees
       @employees = Client.employees.keys
+    end
+
+    def validate_user
+      redirect_to root_path unless current_user.admin? || @client.user_id == current_user.id
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

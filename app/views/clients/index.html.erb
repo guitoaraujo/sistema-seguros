@@ -36,7 +36,9 @@
         <td><%= client.city %></td>
         <td><%= client.estate %></td>
         <td><%= link_to t('buttons.show'), client, class: 'btn btn-sm btn-info' %></td>
-        <td><%= link_to t('buttons.edit'), edit_client_path(client), class: 'btn btn-sm btn-warning' %></td>
+        <% if client.user_id == current_user.id || current_user.admin? %>
+          <td><%= link_to t('buttons.edit'), edit_client_path(client), class: 'btn btn-sm btn-warning' %></td>
+        <% end %>
         <% if current_user.admin? %>
           <td><%= link_to t('buttons.delete'), client, method: :delete, class: 'btn btn-sm btn-danger', data: { confirm: 'Are you sure?' } %></td>
         <% end %>
