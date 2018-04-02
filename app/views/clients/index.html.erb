@@ -1,4 +1,13 @@
 <h1><%= t('clients') %></h1>
+
+<% if current_user.admin? %>
+  <h4>Gravar CSV</h4>
+  <%= form_tag clients_import_path, multipart: true , class: 'form-group' do %>
+    <%= file_field_tag :file, class: 'form-control' %>
+    <%= submit_tag 'Gravar CSV', class: 'btn btn-success mt-3' %>
+  <% end %>
+<% end %>
+
 <span><%= link_to t('new_client'), new_client_path, class: 'btn btn-sm btn-success' %></span>
 <%= will_paginate @clients, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer, class: 'd-flex justify-content-center pagination-sm' %>
 <table class="table table-hover table-bordered table-sm mt-3">

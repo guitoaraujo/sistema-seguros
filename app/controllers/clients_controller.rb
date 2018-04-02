@@ -65,6 +65,12 @@ class ClientsController < ApplicationController
     end
   end
 
+
+  def import
+    Client.import(params[:file], current_user.id)
+    redirect_to root_path, notice: 'CSV gravado com sucesso.'
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_client

@@ -17,6 +17,8 @@ pt-BR:
           one:   "1 erro ocorreu, erifique abaixo:"
           other: "%{count} erros ocorreram, verifiquem abaixo:"
         body: "Ocorreram erros nos seguintes campos:"
+      messages:
+        record_invalid: "Validação falhou: %{errors}"
       models:
         client:
           attributes:
