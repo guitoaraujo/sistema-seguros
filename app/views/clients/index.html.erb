@@ -32,13 +32,13 @@
   <tbody>
     <% @clients.each do |client| %>
       <tr scope="row">
-        <td><%= client.register_date.strftime("%d/%m/%y") %></td>
+        <td><%= client.register_date.strftime("%d/%m/%Y") %></td>
         <td><%= client.insured %></td>
         <td><%= client.cnpj %></td>
         <td><%= client.insured_type %></td>
         <td><%= client.supervisor %></td>
         <td><%= client.director %></td>
-        <td class="<%= validity_alert_control(client.validity) %>"><%= client.validity.strftime("%d/%m/%y") %></td>
+        <td class="<%= validity_alert_control(client.validity) %>"><%= client.validity.strftime("%d/%m/%Y") %></td>
         <td><%= client.insurer %></td>
         <td><%= client.assistant %></td>
         <td><%= client.commercial_supervisor %></td>
