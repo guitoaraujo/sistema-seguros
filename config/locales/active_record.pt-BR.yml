@@ -28,6 +28,8 @@ pt-BR:
               blank: " não pode estar em branco!"
             cnpj:
               blank: " não pode estar em branco!"
+              taken: " já foi cadastrado!"
+              not_a_number: " não pode conter caracteres, apenas números."
             insured:
               blank: " não pode estar em branco!"
             validity:
