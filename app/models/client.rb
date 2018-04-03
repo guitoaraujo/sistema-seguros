@@ -35,6 +35,7 @@ class Client < ApplicationRecord
   def self.import(file, user)
     CSV.foreach(file.path, headers: true, col_sep: ';') do |row|
       row << { user_id: user }
+      row['register_date'] = row['register_date'].to_datetime.strftime('%d/%m/%Y')
       if row['validity'].blank?
         row['validity'] = 100.year.from_now.strftime('%d/%m/%Y')
       end
