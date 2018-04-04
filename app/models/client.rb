@@ -5,7 +5,7 @@ class Client < ApplicationRecord
   validates :register_date, :validity, :budge, :cnpj, :insured, presence: true
   validates :cnpj, uniqueness: true, numericality: { only_integer: true }
 
-  enum types:   [ 'Prospect', 'Renovação ForteBens' ]
+  enum types:   [ 'Prospect', 'Renovação ForteBens', 'Varejo' ]
   enum insurers: [ 'Itau',
                   'Porto',
                   'Sulamerica',
@@ -29,7 +29,8 @@ class Client < ApplicationRecord
                     'Kelly',
                     'Flavia',
                     'Camila',
-                    'Richard' ]
+                    'Richard',
+                    'Gizele' ]
 
 
   def self.import(file, user)
