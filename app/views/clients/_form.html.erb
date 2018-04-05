@@ -12,7 +12,7 @@
 
   <div class="field">
     <%= form.label t('register_date') %>
-    <%= form.datetime_local_field :register_date, id: :client_date, class: 'form-control' %>
+    <%= form.date_field :register_date, id: :client_date, class: 'form-control' %>
   </div>
 
   <div class="field">
@@ -92,7 +92,7 @@
 
   <div class="field">
     <%= form.label t('validity') %>
-    <%= form.datetime_local_field :validity, id: :client_validity, class: 'form-control' %>
+    <%= form.date_field :validity, id: :client_validity, class: 'form-control' %>
   </div>
 
   <div class="field">

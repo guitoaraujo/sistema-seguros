@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180402175012) do
+ActiveRecord::Schema.define(version: 20180405182205) do
 
   create_table "clients", force: :cascade do |t|
-    t.datetime "register_date"
+    t.date "register_date"
     t.integer "budge"
     t.string "insured"
     t.integer "cnpj"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20180402175012) do
     t.string "director_phone"
     t.string "director_cellphone"
     t.integer "last_bonus"
-    t.datetime "validity"
+    t.date "validity"
     t.string "insurer"
     t.string "assistant"
     t.string "commercial_supervisor"
