@@ -46,4 +46,13 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  if User.table_exists?
+    RailsAdmin.config User do
+      list do
+        # simply adding fields by their names (order will be maintained)
+        include_fields :name, :id, :created_at, :updated_at
+      end
+    end
+  end
 end
