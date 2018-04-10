@@ -3,7 +3,7 @@ class Client < ApplicationRecord
   belongs_to :user
 
   validates :register_date, :validity, :budge, :cnpj, :insured, presence: true
-  validates :cnpj, numericality: { only_integer: true }
+  #validates :cnpj, numericality: { only_integer: true }
 
   enum types:   [ 'Prospect', 'Renovação ForteBens', 'Varejo' ]
   enum insurers: [ 'Itau',

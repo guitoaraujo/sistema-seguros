@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180405182205) do
+ActiveRecord::Schema.define(version: 20180321205530) do
 
   create_table "clients", force: :cascade do |t|
-    t.date "register_date"
+    t.datetime "register_date"
     t.integer "budge"
     t.string "insured"
-    t.integer "cnpj"
+    t.string "cnpj"
     t.text "itens"
     t.integer "current_bonus"
     t.string "insured_type"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20180405182205) do
     t.string "director_phone"
     t.string "director_cellphone"
     t.integer "last_bonus"
-    t.date "validity"
+    t.datetime "validity"
     t.string "insurer"
     t.string "assistant"
     t.string "commercial_supervisor"
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20180405182205) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "admin"
+    t.boolean "admin", default: false
     t.string "name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
