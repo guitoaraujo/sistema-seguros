@@ -80,6 +80,7 @@ pt-BR:
         city: "Cidade"
         estate: "Estado"
         obs: "Obs."
+        user: "Usuário"
         created_at: "Criado em"
         updated_at: "Atualizado em"
 
