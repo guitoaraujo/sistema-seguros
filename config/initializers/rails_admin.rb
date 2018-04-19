@@ -31,6 +31,25 @@ RailsAdmin.config do |config|
       field :cnpj
       field :updated_at
       field :user
+      field :itens
+      field :current_bonus
+      field :insured_type
+      field :supervisor
+      field :supervisor_email
+      field :supervisor_phone
+      field :supervisor_cellphone
+      field :director
+      field :director_email
+      field :director_phone
+      field :director_cellphone
+      field :last_bonus
+      field :validity
+      field :insurer
+      field :assistant
+      field :commercial_supervisor
+      field :city
+      field :estate
+      field :obs
       sort_by :updated_at
       items_per_page 100
     end
